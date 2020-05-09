@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lato&display=swap");
+* {
+  font-family: 'Acme',sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #3B548B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container {
+  width: 550px;
+  height: 515px;
+  margin: 0 auto;
+  background-color: #3B548B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .form {
+  width: 420px;
+  height: 515px;
+  margin: 0 auto;
+  background-color: #3B548B;
+  text-align: center;
+  -webkit-box-shadow: 20px 20px 60px #324776, -20px -20px 60px #4461a0;
+          box-shadow: 20px 20px 60px #324776, -20px -20px 60px #4461a0;
+  border-radius: 18px;
+  -webkit-animation: yourAnimation 1.5s forwards 0s ease-in-out;
+          animation: yourAnimation 1.5s forwards 0s ease-in-out;
+}
+
+.main-container h4 {
+  font-size: 1.8rem;
+  color: #FF8F5E;
+  letter-spacing: 1px;
+  text-align: start;
+  padding: 0rem 4rem;
+  margin: 20px 0px;
+}
+
+.main-container input[type="text"], .main-container [type="password"], .main-container [type="email"] {
+  font-size: 16px;
+  border-style: none;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 20px 20px 60px #324776, inset -20px -20px 60px #4461a0;
+          box-shadow: inset 20px 20px 60px #324776, inset -20px -20px 60px #4461a0;
+  width: 300px;
+  height: 50px;
+  margin-top: 15px;
+  outline: none;
+  caret-color: #FF905F;
+  background-color: transparent;
+  padding-left: 18px;
+  color: #7A91C6;
+}
+
+.main-container .input-grp {
+  position: relative;
+}
+
+.main-container .input-grp span {
+  position: absolute;
+  top: 33px;
+  background-color: transparent;
+  left: 4.6rem;
+  font-size: inherit;
+  font-family: inherit;
+  color: #7A91C6;
+  -webkit-transition: all 0.5s  ease-in-out;
+  transition: all 0.5s  ease-in-out;
+  outline: none;
+  pointer-events: none;
+}
+
+.main-container .checkbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 4rem;
+}
+
+.main-container p {
+  color: #7A91C6;
+  font-size: 15px;
+  padding-left: 0.5rem;
+}
+
+.main-container input[type="checkbox"] {
+  width: 34px;
+  height: 34px;
+  background-color: transparent;
+  -webkit-box-shadow: inset 15px 15px 15px #324776, inset -15px -15px 15px #4461a0;
+          box-shadow: inset 15px 15px 15px #324776, inset -15px -15px 15px #4461a0;
+  -webkit-appearance: none;
+  position: relative;
+  border-radius: 8px;
+  outline: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  -webkit-animation: blink 1s forwards ease;
+          animation: blink 1s forwards ease;
+}
+
+.main-container input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  text-align: center;
+  line-height: 2.3rem;
+  font-size: 1.6rem;
+}
+
+.main-container input[type="checkbox"]:checked::before {
+  content: '\2713';
+  color: #2DE76D;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container ::-webkit-input-placeholder {
+  color: #7A91C6;
+  padding-left: 20px;
+}
+
+.main-container :-ms-input-placeholder {
+  color: #7A91C6;
+  padding-left: 20px;
+}
+
+.main-container ::-ms-input-placeholder {
+  color: #7A91C6;
+  padding-left: 20px;
+}
+
+.main-container ::placeholder {
+  color: #7A91C6;
+  padding-left: 20px;
+}
+
+.main-container aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container aside a {
+  font-size: 13px;
+  color: #aec3f5;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.main-container aside a:hover {
+  color: #FF8F5E;
+}
+
+.main-container .form button {
+  width: 120px;
+  height: 50px;
+  background-image: linear-gradient(45deg, #FF453B, #FF8F5E);
+  color: white;
+  -o-border-image: linear-gradient(20deg, #FF453B, #FF8F5E);
+     border-image: linear-gradient(20deg, #FF453B, #FF8F5E);
+  border-image-slice: 5;
+  border-radius: 5px;
+  word-spacing: 1px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-container button:hover {
+  -webkit-box-shadow: 0px 10px 10px -10px #FF8F5E;
+          box-shadow: 0px 10px 10px -10px #FF8F5E;
+}
+
+.main-container .btn {
+  text-align: start;
+  padding: 0px 4rem;
+}
+
+.main-container .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 26%;
+}
+
+.main-container .fa {
+  -webkit-box-shadow: 20px 20px 60px #324776, -20px -20px 60px #4461a0;
+          box-shadow: 20px 20px 60px #324776, -20px -20px 60px #4461a0;
+  width: 55px;
+  height: 55px;
+  border-radius: 10%;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #aec3f5;
+}
+
+.main-container .fa:hover {
+  color: #FF8F5E;
+  -webkit-box-shadow: inset 15px 15px 30px #324776, inset -15px -15px 30px #4461a0;
+          box-shadow: inset 15px 15px 30px #324776, inset -15px -15px 30px #4461a0;
+}
+
+@-webkit-keyframes yourAnimation {
+  0% {
+    -webkit-transform: translateY(-700px);
+            transform: translateY(-700px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes yourAnimation {
+  0% {
+    -webkit-transform: translateY(-700px);
+            transform: translateY(-700px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.main-container input:focus ~ span {
+  top: -2px;
+  left: 40px;
+  color: white;
+  background-color: #FF8F5E;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.main-container input:valid ~ span {
+  top: -2px;
+  left: 40px;
+  color: white;
+  background-color: #38cc8c;
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=form.css.map */
